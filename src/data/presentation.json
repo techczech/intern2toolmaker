@@ -1,49 +1,4458 @@
 {
   "metadata": {
-    "id": "00000000-0000-0000-0000-000000000000",
-    "source_file": "placeholder.pptx",
-    "processed_at": "2026-01-01T00:00:00.000000",
+    "id": "6cf8552e-bfb4-4305-83d0-146e74f754b4",
+    "source_file": "6cf8552e-bfb4-4305-83d0-146e74f754b4.pptx",
+    "processed_at": "2026-01-14T12:40:01.119311",
     "stats": {
-      "slide_count": 1,
-      "image_count": 0
+      "slide_count": 142,
+      "image_count": 94
     }
   },
   "sections": [
     {
-      "title": "Getting Started",
+      "title": "Introduction",
       "slides": [
         {
           "order": 1,
-          "title": "Welcome to Your Handout Site",
-          "layout": "Title Slide",
-          "notes": "This is a placeholder slide. Replace this with your actual presentation content.",
+          "title": "From intern to toolmaker:  Five roles AI can play to support research and learning",
+          "layout": "Title Slide - Image Background",
+          "notes": "",
           "content": [
             {
               "type": "heading",
-              "text": "Replace this with your presentation",
-              "level": 2
+              "text": "From intern to toolmaker: \u000bFive roles AI can play to support research and learning",
+              "level": 1
             },
             {
               "type": "list",
               "style": "bullet",
               "items": [
                 {
-                  "text": "Extract your PowerPoint using: python scripts/extract-pptx.py your-presentation.pptx sourcematerials/",
-                  "children": []
-                },
-                {
-                  "text": "Update src/data/sessionInfo.ts with your session details",
-                  "children": []
-                },
-                {
-                  "text": "Run npm run build to process media and build the site",
-                  "children": []
-                },
-                {
-                  "text": "Deploy with: vercel --prod or wrangler pages deploy dist",
+                  "text": "Dominik.Lukes@oerc.ox.ac.uk",
+                  "level": 0,
                   "children": []
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Why are you here",
+      "slides": [
+        {
+          "order": 10,
+          "title": "Why are we here?",
+          "layout": "Section heading with image (white)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Why are we here?",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 11,
+          "title": "Why you’re doing a degree at Oxford?",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Why you’re doing a degree at Oxford?",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Vertical Solid List",
+              "nodes": [
+                {
+                  "id": "{EBEAE237-00C9-4F5A-8AF8-DD8166F98F28}",
+                  "text": "Prove to the authorities that you’ve changed you brain enough to change the world",
+                  "children": [],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_E4D609CF40EC4287B29A392963862F9D.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{4BA0F0BB-0E77-4FCE-854B-771C2B6A3ACC}",
+                  "text": "Change your brain",
+                  "children": [],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_DFCDA84F222B41D998071BC3C2EC57E5.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{8D3E407F-7E4C-4524-A5F6-36D8F006A0BC}",
+                  "text": "Change the world",
+                  "children": [],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_003A8568170C43CEB8D42EC8D9EE1622.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 12,
+          "title": "There’s a conflict between the activities you need to perform these two",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "There’s a conflict between the activities you need to perform these two",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Vertical Solid List",
+              "nodes": [
+                {
+                  "id": "{EBEAE237-00C9-4F5A-8AF8-DD8166F98F28}",
+                  "text": "Prove to the authorities that you’ve changed you brain enough to change the world",
+                  "children": [],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_E4D609CF40EC4287B29A392963862F9D.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{4BA0F0BB-0E77-4FCE-854B-771C2B6A3ACC}",
+                  "text": "Change your brain",
+                  "children": [],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_DFCDA84F222B41D998071BC3C2EC57E5.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{8D3E407F-7E4C-4524-A5F6-36D8F006A0BC}",
+                  "text": "Change the world",
+                  "children": [],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_003A8568170C43CEB8D42EC8D9EE1622.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 13,
+          "title": "Where AI can play a useful role",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Where AI can play a useful role",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Vertical Solid List",
+              "nodes": [
+                {
+                  "id": "{EBEAE237-00C9-4F5A-8AF8-DD8166F98F28}",
+                  "text": "Prove to the authorities that you’ve changed you brain enough to change the world",
+                  "children": [],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_E4D609CF40EC4287B29A392963862F9D.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{4BA0F0BB-0E77-4FCE-854B-771C2B6A3ACC}",
+                  "text": "Change your brain",
+                  "children": [],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_DFCDA84F222B41D998071BC3C2EC57E5.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{8D3E407F-7E4C-4524-A5F6-36D8F006A0BC}",
+                  "text": "Change the world",
+                  "children": [],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_003A8568170C43CEB8D42EC8D9EE1622.png",
+                  "icon_alt": null
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Use AI usually OK",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Use AI if permitted",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 14,
+          "title": "You cannot build muscle this way.",
+          "layout": "Title as only text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "You cannot build muscle this way.",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_14_5.png",
+              "alt": "Picture 4",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 15,
+          "title": "You still need to do the heavy lifting. But maybe you can use a spotter.",
+          "layout": "Title as only text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "You still need to do the heavy lifting. But maybe you can use a spotter.",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_15_4.png",
+              "alt": "Picture 3",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 16,
+          "title": "Roles AI can play in the support of changing your brain",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Roles AI can play in the support of changing your brain",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Vertical Solid List",
+              "nodes": [
+                {
+                  "id": "{E04E0998-46DD-4B59-81DF-FAC164B8643E}",
+                  "text": "Intern / Research Assistant",
+                  "children": [
+                    {
+                      "id": "{9F353224-23E1-924C-8652-BE43A79F3489}",
+                      "text": "Help with routine tasks – from literature searches to organising your schedule.",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_E89154BD67CE4D47865E058E1F0E8BFF.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{BB6514EA-6EF9-4BEB-BE8F-BDA0F30B1E08}",
+                  "text": "Tutor",
+                  "children": [
+                    {
+                      "id": "{DD0B14CE-358A-4C40-A2AB-CC37862DB312}",
+                      "text": "Walk you through concepts and processes step by step.",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_8AF1B0DD714F41A1BF09583554F4DF57.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{0D944B1F-4E4B-4360-99EA-1274E9AA659F}",
+                  "text": "Peer Reviewer / Consultant",
+                  "children": [
+                    {
+                      "id": "{8ADB61F2-8A77-CF44-B557-282739F5BB20}",
+                      "text": "Give you feedback on your ideas and work.",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_76883B00D6824DDAA0C87CF3BF21A0DB.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{03A92076-9622-4A9F-B0FD-327BFB8CC3C3}",
+                  "text": "Translator",
+                  "children": [
+                    {
+                      "id": "{ACB47031-FD10-9340-86AE-16F8E3D85ED0}",
+                      "text": "Translate between languages, formats and modalities.",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_16D74FB5E32F4E8AAD267FFDA6662184.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{E5FF6E7B-3AB6-7741-87BD-7EE574593418}",
+                  "text": "Tool maker",
+                  "children": [
+                    {
+                      "id": "{B23A284F-1839-4D4A-884A-28BC1E4A8493}",
+                      "text": "Create useful tools for yourself and others to use in your research and study.",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_12FF65F1DF6BE041A523DBDBEC5D2200.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 17,
+          "title": "But it’s important to learn about the tools you use!",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "But it’s important to learn about the tools you use!",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 18,
+          "title": "Tools of study and research",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Tools of study and research",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Vertical Solid List",
+              "nodes": [
+                {
+                  "id": "{854AA016-8A8C-4F5E-A4DE-B5C4723AFE03}",
+                  "text": "Lab equipment",
+                  "children": [],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_4F53F29EDA3E493CB650F3334F7A610F.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{1D080D49-E507-4DFB-80B6-64CA7D96E3DE}",
+                  "text": "Theories and methods",
+                  "children": [],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_352E478226734E899AF360317B69B0AA.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{14D49C48-4D93-4B58-9DC3-100D318B8CC8}",
+                  "text": "Digital tools",
+                  "children": [],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_DCEDA80FF0AC4AF89E26ECF3103C035C.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{B97DFEDA-CF5B-4823-B044-8AEE8ED1E4E4}",
+                  "text": "Brain",
+                  "children": [],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_68FAAECC139A49A58C16A8683972468E.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 19,
+          "title": "Important! To get the most out of AI as an ideation partner, you need to spend enough time learning how both AI and your ideation instrument (aka brain) work.",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Important! To get the most out of AI as an ideation partner, you need to spend enough time learning how both AI and your ideation instrument (aka brain) work.",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 20,
+          "title": "Three things to learn",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Three things to learn",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Vertical Solid List",
+              "nodes": [
+                {
+                  "id": "{AC60C976-933E-43E6-B206-A9B052FF6516}",
+                  "text": "Learn how",
+                  "children": [
+                    {
+                      "id": "{342D8544-3E08-4E59-BC63-E15045F261DA}",
+                      "text": "to use / do\nto configure",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_F54BDBED327A4B2DA12DF5261B86D50B.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{2A67DD59-950E-4632-B9CD-8DEF89138CC3}",
+                  "text": "Learn to",
+                  "children": [
+                    {
+                      "id": "{744F0B1D-0493-455B-8B3F-2BD1F81EC7D2}",
+                      "text": "make it part of your practice",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_4E194E1588C24E67AA9F8B35EC34E116.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{E7AB74E9-E32D-43A5-9C45-5CBDAC6DB93F}",
+                  "text": "Learn that",
+                  "children": [
+                    {
+                      "id": "{8609CC9D-A6F9-49A3-A011-600D7F50FE30}",
+                      "text": "it is an issue",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{0DE686FB-4743-415D-B98A-0B8D97B22D2A}",
+                      "text": "it is possible",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_78B03B2688334E2BA01F9518DF14DB8B.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 21,
+          "title": "Stephen King, On Writing",
+          "layout": "Quote",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Stephen King, On Writing",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "\"I want to suggest that to write to your best abilities, it behooves you to construct your own toolbox and then build up enough muscle so you can carry it with you. Then, instead of looking at a hard job and getting discouraged, you will perhaps seize the correct tool and get immediately to work.\"",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Which AI",
+      "slides": [
+        {
+          "order": 22,
+          "title": "Which AI?",
+          "layout": "1_Section heading with image (white)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Which AI?",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 23,
+          "title": "Large Language Models ≠ “AI”",
+          "layout": "Title only for image or SmartArt",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Large Language Models ≠ “AI”",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_23_6.png",
+              "alt": "Picture 5",
+              "caption": ""
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_23_7.mp4",
+              "title": "2024-06-18 at 9.08.24 - Purple Gibbon"
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "“AI” / Machine Learning / Data Science",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Large Language Models – Generative AI",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 24,
+          "title": "Generative AI is the fastest growing technology",
+          "layout": "Video with description",
+          "notes": "New paper by Harvard researchers working with OpenAI shows that ChatGPT is now being used by 800 million weekly active users which makes the fastest growing product of all time – generative AI is gaining more users in two years than the internet got in the first 15 years.​\n​\nWith that we can start looking at ChatGPT itself.\n",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Generative AI is the fastest growing technology",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Generative AI is impactful and transformative",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_24_7.png",
+              "alt": "Object 6",
+              "caption": ""
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "From",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "1 million in the first week in Dec 2022",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "to",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "800 million weekly users Sept 2025",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_24_5.png",
+              "alt": "Object 4",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 25,
+          "title": "What is ChatGPT",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "What is ChatGPT",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Vertical Solid List",
+              "nodes": [
+                {
+                  "id": "{0BDEADE5-3EA0-984C-9CAD-906D13E61D1A}",
+                  "text": "Models can use tools",
+                  "children": [
+                    {
+                      "id": "{A40B0F28-AF04-C74C-A4D3-273532C2FDD0}",
+                      "text": "Run computer code",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{765D6906-FC3B-6B42-BD02-0F79FA059C99}",
+                      "text": "Search the web",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_6BCA37B300EFE443805EAB7055F73301.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{8E6BBEBC-4ACD-BC40-8DE4-06121C908E0E}",
+                  "text": "Different types of models",
+                  "children": [
+                    {
+                      "id": "{EF2913D2-6EF1-AA4B-ABC1-225C9570488D}",
+                      "text": "Basic",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{1898A589-3DED-DD42-A84D-B2A2FB6F9F93}",
+                      "text": "Thinking (reasoning)",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_246189AF076E0D4A9762613ACA2E556A.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{4BD2D4E7-8E03-4CBA-9258-108B1C535F16}",
+                  "text": "Powered by a Large Language Model (LLM)",
+                  "children": [
+                    {
+                      "id": "{60D4B71F-9DAF-5C41-A665-24F98E5FC9DD}",
+                      "text": "Generates text or code in many languages",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_04D405FCC3744E00880024114CE42327.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{060B075E-5224-F740-90E4-3C6D58AD3258}",
+                  "text": "Users chat with the model via chatbot",
+                  "children": [
+                    {
+                      "id": "{FCF5746C-8E8F-5745-88FC-B779F0003882}",
+                      "text": "Similar to a conversation with a person",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_E951F4D44E40CF4887EB44877AF1635F.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 26,
+          "title": "Large  Language Models",
+          "layout": "Half page title with text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Large \u000bLanguage Models",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "",
+              "nodes": [
+                {
+                  "id": "{BCB2B14A-A762-424B-91A0-4127CDA4C01A}",
+                  "text": "Clinical risk prediction",
+                  "children": [],
+                  "level": 1,
+                  "icon": null,
+                  "icon_alt": null
+                },
+                {
+                  "id": "{C882A7DF-B03E-E74D-AE65-8AD26F30C25D}",
+                  "text": "Robotics",
+                  "children": [],
+                  "level": 1,
+                  "icon": null,
+                  "icon_alt": null
+                },
+                {
+                  "id": "{2FDA5561-4F55-8542-91F3-EA7B1B52FDBC}",
+                  "text": "NLP (Natural Language Processing)",
+                  "children": [],
+                  "level": 1,
+                  "icon": null,
+                  "icon_alt": null
+                },
+                {
+                  "id": "{9B33CCE9-A2C4-3B45-A65B-BE0E5EDF1B49}",
+                  "text": "Medical Imaging",
+                  "children": [],
+                  "level": 1,
+                  "icon": null,
+                  "icon_alt": null
+                },
+                {
+                  "id": "{B8854F23-4D15-7943-A711-74558608B26B}",
+                  "text": "Recommendation engines",
+                  "children": [],
+                  "level": 1,
+                  "icon": null,
+                  "icon_alt": null
+                },
+                {
+                  "id": "{434578C1-565B-834B-938F-0115B16C218E}",
+                  "text": "AlphaFold",
+                  "children": [],
+                  "level": 1,
+                  "icon": null,
+                  "icon_alt": null
+                },
+                {
+                  "id": "{72445E0E-BEAE-8642-9F91-104BA0DF827B}",
+                  "text": "Self-driving",
+                  "children": [],
+                  "level": 1,
+                  "icon": null,
+                  "icon_alt": null
+                },
+                {
+                  "id": "{88192AF5-82BC-D74C-8FD5-4C2CAAA87EA2}",
+                  "text": "Clustering algorithms",
+                  "children": [],
+                  "level": 1,
+                  "icon": null,
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 27,
+          "title": "More in Week 2. For now, you should know these things…",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "More in Week 2. For now, you should know these things…",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 28,
+          "title": "Using AI = Models, Chatbots, Apps",
+          "layout": "Title Only",
+          "notes": "Models\n\tGemini 2.5\n\to3\n\tClaude 4 Sonnet\n\tGPT-4o\nChatbots\n\tChatGPT\n\tClaude\n\tGemini\nApps\n\tNotebookLM\n\tElicit\n\tLoveable",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Using AI = Models, Chatbots, Apps",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Label Description List",
+              "nodes": [
+                {
+                  "id": "{1626828F-5FE0-3B49-857E-F47223E77139}",
+                  "text": "Models",
+                  "children": [
+                    {
+                      "id": "{75F8BD5C-8A26-D548-A034-1CDBA2CBB2BE}",
+                      "text": "GPT-5.1 Thinking",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{182AC83D-DA21-144E-9D1E-91744895428D}",
+                      "text": "Claude 4.5 Sonnet",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{ABDB9B97-A226-B241-B21F-95817C41AD74}",
+                      "text": "Kimi K2 Thinking",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{02466834-539E-814D-81B3-0ED9797828AB}",
+                      "text": "Gemini 2.5 Pro",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{27564C89-CEDE-5A49-AE92-915B4BB0477E}",
+                      "text": "Grok Heavy",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{D2877606-D087-1B43-B0C3-879DF2DEC7BC}",
+                      "text": "GPT-5.1 Pro",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_1293D6656F971A40B6F648BF557977DF.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{AA19F190-5E5C-0A43-B502-04899DE1959C}",
+                  "text": "Apps",
+                  "children": [
+                    {
+                      "id": "{40E8A91D-43B8-6E42-B21C-A31D8A754EF0}",
+                      "text": "Elicit, Consensus, Edison Scientific",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{81997E21-0D37-E74E-ACBF-96491A44F01D}",
+                      "text": "Google AI Studio",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{5EB6CB85-33D9-734D-A864-6B4E07128D03}",
+                      "text": "NotebookLM",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{576BA043-C7FC-334C-8A2C-C9FB07E62A22}",
+                      "text": "Loveable, Cursor\nNotion",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_402FDDD6DD586243A6D5401164FA4375.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{1C2BB6B1-5E31-4442-81F3-969DD2F137E9}",
+                  "text": "Chatbots",
+                  "children": [
+                    {
+                      "id": "{435E4CD5-414B-2542-94FF-4148FF3F4D5F}",
+                      "text": "ChatGPT",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{30A948E9-E4E7-D64E-B2F3-288D5F7DBE72}",
+                      "text": "Claude\nGrok",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{0B059273-A4ED-564E-9A92-FF96683BCD8F}",
+                      "text": "Gemini",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_6C85531568ACFE4AB49C065352C34188.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 29,
+          "title": "Other supported AI tools at Oxford",
+          "layout": "Sidebar title without text",
+          "notes": "You can log in to each of these ",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Other supported AI tools at Oxford",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Vertical Solid List",
+              "nodes": [
+                {
+                  "id": "{AEA4AA1E-6FA0-2445-A2F2-30D46A62295C}",
+                  "text": "Gemini",
+                  "children": [
+                    {
+                      "id": "{6C7C683E-506C-DA48-A58B-6106BB67BFD7}",
+                      "text": "Chatbot from Google (basic)",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_C06E90174075CA448482F2AEAF2D2CD3.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{6E3A3CF9-4000-C44D-AA33-42475922C106}",
+                  "text": "Google AI Studio",
+                  "children": [
+                    {
+                      "id": "{727104FC-361B-9047-8F0F-CAB07C6BD6B6}",
+                      "text": "Exploring AI model capabilities from Google",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_BBCCBF1D2DFFB24BADDE9A856B09DA70.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{EAA058E3-7CC0-A144-9406-475D7FDF0464}",
+                  "text": "Microsoft 365 Copilot",
+                  "children": [
+                    {
+                      "id": "{A153DD0C-111A-5E4A-AFF1-1C035AE9B815}",
+                      "text": "Paid tool that integrated with your files and email",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_928CD1B1D713DF429792192AB73FA18B.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{EA1E2AA8-E7CE-CD4A-A591-18DFD56D03EE}",
+                  "text": "Copilot Chat",
+                  "children": [
+                    {
+                      "id": "{7FBFC1EF-3DD6-3D44-8176-0FE68A95938C}",
+                      "text": "Free chatbot from Microsoft",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_F5019584017FDF4A9A8F5279650E4F29.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{C08893D9-3DAE-3F49-946D-A774B5D06F90}",
+                  "text": "NotebookLM",
+                  "children": [
+                    {
+                      "id": "{F3ED4A8B-57E3-B240-972D-0C64DB84C619}",
+                      "text": "AI Assisted note taking from Google",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_56681B107BB59D4297B4E668817F14AA.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{4BD2D4E7-8E03-4CBA-9258-108B1C535F16}",
+                  "text": "ChatGPT Edu",
+                  "children": [
+                    {
+                      "id": "{6AB4A0CE-39E3-BA42-97C5-9FB3F2F40142}",
+                      "text": "Chatbot from OpenAI",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_04D405FCC3744E00880024114CE42327.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Frontier illustrated by role",
+      "slides": [
+        {
+          "order": 30,
+          "title": "Frontier illustrated",
+          "layout": "1_Section heading with image (white)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Frontier illustrated",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 31,
+          "title": "Five roles AI can play at the frontier",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Five roles AI can play at the frontier",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Vertical Solid List",
+              "nodes": [
+                {
+                  "id": "{E04E0998-46DD-4B59-81DF-FAC164B8643E}",
+                  "text": "Intern / Research Assistant",
+                  "children": [
+                    {
+                      "id": "{9F353224-23E1-924C-8652-BE43A79F3489}",
+                      "text": "Help with routine tasks – from literature searches to organising your schedule.",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_E89154BD67CE4D47865E058E1F0E8BFF.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{BB6514EA-6EF9-4BEB-BE8F-BDA0F30B1E08}",
+                  "text": "Tutor",
+                  "children": [
+                    {
+                      "id": "{DD0B14CE-358A-4C40-A2AB-CC37862DB312}",
+                      "text": "Walk you through concepts and processes step by step.",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_8AF1B0DD714F41A1BF09583554F4DF57.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{0D944B1F-4E4B-4360-99EA-1274E9AA659F}",
+                  "text": "Peer Reviewer / Consultant",
+                  "children": [
+                    {
+                      "id": "{8ADB61F2-8A77-CF44-B557-282739F5BB20}",
+                      "text": "Give you feedback on your ideas and work.",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_76883B00D6824DDAA0C87CF3BF21A0DB.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{03A92076-9622-4A9F-B0FD-327BFB8CC3C3}",
+                  "text": "Translator",
+                  "children": [
+                    {
+                      "id": "{ACB47031-FD10-9340-86AE-16F8E3D85ED0}",
+                      "text": "Translate between languages, formats and modalities.",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_16D74FB5E32F4E8AAD267FFDA6662184.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{E5FF6E7B-3AB6-7741-87BD-7EE574593418}",
+                  "text": "Tool maker",
+                  "children": [
+                    {
+                      "id": "{B23A284F-1839-4D4A-884A-28BC1E4A8493}",
+                      "text": "Create useful tools for yourself and others to use in your research and study.",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_12FF65F1DF6BE041A523DBDBEC5D2200.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Itern",
+      "slides": [
+        {
+          "order": 32,
+          "title": "Intern and Research Assistant",
+          "layout": "1_Section heading with image (white)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Intern and Research Assistant",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 33,
+          "title": "AI as Intern",
+          "layout": "Title Only",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "AI as Intern",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Label Description List",
+              "nodes": [
+                {
+                  "id": "{AE44BF75-061E-2B4C-9EA1-70AE0278426E}",
+                  "text": "Dangers",
+                  "children": [
+                    {
+                      "id": "{DEB2E6DC-D527-9649-B54C-0FC9F66A29A0}",
+                      "text": "Skills not clear",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{A2219048-2D1D-5A48-969E-853932A49C1B}",
+                      "text": "Not always reliable",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{CB7F31DA-1EF0-784B-A749-F2BAA287EED7}",
+                      "text": "Needs constant supervision",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_96F2EAAA251E654CAFE388012A8031B4.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{DF025068-FC1F-4590-A4AC-52D55EB37B67}",
+                  "text": "Strengths",
+                  "children": [
+                    {
+                      "id": "{FB83B167-1EAF-D640-A9F2-9AE7838D046D}",
+                      "text": "Can perform many tasks",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{32A8E76F-2464-3543-A82B-3021F413AAD7}",
+                      "text": "Has helpful skills",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_085C07A03DDC4A158B5F1F0DCEA90FC1.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 34,
+          "title": "AI intern can do a first draft of a background search",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "AI intern can do a first draft of a background search",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 35,
+          "title": "Gathering background on readings",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Gathering background on readings",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Switch to GPT-5 Thinking to gather more background on complex readings",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_35_7.mp4",
+              "title": "CleanShot 2025-11-04 at 1646from Google Chrome with ChatGPT"
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_35_7.png",
+              "alt": "CleanShot 2025-11-04 at 1646from Google Chrome with ChatGPT",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 36,
+          "title": "Check all links and content",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Check all links and content",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Check the AI intern’s work by following up the links – never cite anything you haven’t checked!",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_36_6.mp4",
+              "title": "CleanShot 2025-11-04 at 1701from Google Chrome with Book and author background"
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_36_6.png",
+              "alt": "CleanShot 2025-11-04 at 1701from Google Chrome with Book and author background",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 37,
+          "title": "AI intern can help you draft your schedules and manage your calendar",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "AI intern can help you draft your schedules and manage your calendar",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 38,
+          "title": "Step 1: Give background",
+          "layout": "Screenshot description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Step 1: Give background",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_38_13.png",
+              "alt": "Picture 12",
+              "caption": ""
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Use dictate button to speak about your week.",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "Upload any relevant documents.",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "Provide as much information as possible.",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_38_15.png",
+              "alt": "Picture 14",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 39,
+          "title": "Step 2: Ask for schedule",
+          "layout": "Screenshot description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Step 2: Ask for schedule",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_39_5.png",
+              "alt": "Picture 4",
+              "caption": ""
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Ask for the kind of organization that fits with your actual life",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 40,
+          "title": "Step 3: Ask for calendar",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Step 3: Ask for calendar",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_40_5.png",
+              "alt": "Media Placeholder 4",
+              "caption": ""
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Ask for .ical (calendar that can be imported)",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_40_7.png",
+              "alt": "Picture 6",
+              "caption": ""
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_40_6.png",
+              "alt": "Picture 5",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 41,
+          "title": "It’s an intern or a friend, not a contractor!",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "It’s an intern or a friend, not a contractor!",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 42,
+          "title": "How to think about ChatGPT’s role",
+          "layout": "Half page title with text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "How to think about ChatGPT’s role",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "ChatGPT’s contribution \u000b< 100%",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "Reduce work from 2 hours to 30 minutes. Not 1 minute!",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "Can help make more productive work.",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 43,
+          "title": "Other tools are available but the same principles and limitations apply.",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Other tools are available but the same principles and limitations apply.",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 44,
+          "title": "There are dedicated tools that can help",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "There are dedicated tools that can help",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_44_9.png",
+              "alt": "Picture 8",
+              "caption": ""
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Notion AI (paid) can help organize work in databases",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_44_5.png",
+              "alt": "Media Placeholder 4",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 45,
+          "title": "Two more limitations of LLM interns",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Two more limitations of LLM interns",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Vertical Solid List",
+              "nodes": [
+                {
+                  "id": "{D2D81989-E73F-2843-BB35-45395E0B5571}",
+                  "text": "No access to training data",
+                  "children": [
+                    {
+                      "id": "{8593F6EC-4F0A-DF4E-AEB7-A693E9DECAC1}",
+                      "text": "Don't ask for quotes",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_BA5F8F5C1BF1DB4FAC9BB62E4691B6FE.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{726F1FC5-7189-8D49-9B63-6A1551C6D2B4}",
+                  "text": "No self-knowledge",
+                  "children": [
+                    {
+                      "id": "{D44F8E7E-963F-C84A-B2F8-05BDA1F4D131}",
+                      "text": "Don't ask \"how you did this\"",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_09CD1AD3CBE5CF47975C9F15C0DEA849.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 46,
+          "title": "Important!",
+          "layout": "Screenshot description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Important!",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Never ask ChatGPT about itself!",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "ChatGPT does not have any self-knowledge.",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_46_12.png",
+              "alt": "Media Placeholder 11",
+              "caption": ""
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_46_13.png",
+              "alt": "Picture 12",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 47,
+          "title": "ChatGPT is great for tech support but a really bad manual to itself!",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "ChatGPT is great for tech support but a really bad manual to itself!",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 48,
+          "title": "Don’t ask for quotes from training data",
+          "layout": "Video with description",
+          "notes": "ChatGPT does not have access to its training data or database\nhttps://chatgpt.com/share/e/68efa4ce-d1f0-8011-b351-656d7d95ed35",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Don’t ask for quotes from training data",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "ChatGPT has no access to data it was trained on!",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "If you ask for exact quotes from training data, you will get errors.",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_48_5.mp4",
+              "title": "CleanShot 2025-10-10 at 1347from Google Chrome with ChatGPT"
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_48_5.png",
+              "alt": "CleanShot 2025-10-10 at 1347from Google Chrome with ChatGPT",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 49,
+          "title": "Search to confirm quotes",
+          "layout": "Video with description",
+          "notes": "https://chatgpt.com/share/e/68efa4ce-d1f0-8011-b351-656d7d95ed35",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Search to confirm quotes",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Always confirm quotes by search but still check the source.",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_49_5.mp4",
+              "title": "CleanShot 2025-10-10 at 1349from Google Chrome with Lucius response Act 3"
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_49_5.png",
+              "alt": "CleanShot 2025-10-10 at 1349from Google Chrome with Lucius response Act 3",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 50,
+          "title": "There is also Deep Research?",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "There is also Deep Research?",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Vertical Solid List",
+              "nodes": [
+                {
+                  "id": "{2127F9BD-D9EE-524F-9FEA-57C7C4C7DD2A}",
+                  "text": "Perplexity",
+                  "children": [
+                    {
+                      "id": "{5CB8C9DE-6DEF-354C-99B9-D7AF2DE35DDA}",
+                      "text": "Web search with filter for academic sources",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_89C4DF491959B94AA349D9B314AD85FF.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{2C06E956-D012-D54C-A42C-729713C42637}",
+                  "text": "Elicit",
+                  "children": [
+                    {
+                      "id": "{0333AD70-98DB-474B-BDAB-2F72750B93D8}",
+                      "text": "Lit reviews with semantic scholar",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_1913C262347721418DC9F13EF3E0057D.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{2105DCB8-1265-3F4D-86E6-01824FD203FA}",
+                  "text": "Edison Scientific",
+                  "children": [
+                    {
+                      "id": "{19993F02-3E63-5B4D-84FF-DE6F32AF61E7}",
+                      "text": "Automated scientist",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_4550B5364E463B489A98B197F5F40054.jpeg",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{D0FDACA0-9114-4B48-A3DA-0BBDE122BA81}",
+                  "text": "Consensus",
+                  "children": [
+                    {
+                      "id": "{3A48080A-FAEB-C546-8988-C4E6095149BE}",
+                      "text": "Lit reviews",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_FB5A21E9E3DA114D854180F27B339ED3.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{8A1644C3-5AF8-2947-B25E-FB5E02FCD13A}",
+                  "text": "Manus",
+                  "children": [
+                    {
+                      "id": "{05173419-4915-D942-A761-CE6342530344}",
+                      "text": "Web search builds websites",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_2DC6DE2FB6FFF045AB14FDF1D3DC7603.jpeg",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{9B1B70BB-976E-BE44-9120-F3CE8E92D243}",
+                  "text": "ChatGPT",
+                  "children": [
+                    {
+                      "id": "{EBB35F95-D6BF-A34D-B90D-679D72F091FA}",
+                      "text": "GPT-5 Thinking alternative",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{BD0526C7-01C9-9A41-94D6-FD6DE99BC35F}",
+                      "text": "Integrated (not in Edu)",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_D16D623A93D1504CB0315F9B6ED27A7E.jpeg",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{2D2EDA20-7904-F940-8A28-EA2F2C52AC57}",
+                  "text": "NotebookLM",
+                  "children": [
+                    {
+                      "id": "{4E530BA6-499C-B94A-AC9A-FE57EDDBE4DB}",
+                      "text": "Integrated with own slides",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_76518483185BF843BA0F7B32815F063A.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 51,
+          "title": "NotebookLM is the best place to try for fre",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "NotebookLM is the best place to try for fre",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_51_3.png",
+              "alt": "Picture 2",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 52,
+          "title": "Use an AI tool to organise your notes.",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Use an AI tool to organise your notes.",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 53,
+          "title": "NotebookLM for organizing notes",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "NotebookLM for organizing notes",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Dump your old Word files into NotebookLM or Google AI Studio and ask for comments or structures",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_53_5.png",
+              "alt": "Media Placeholder 4",
+              "caption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Peer support",
+      "slides": [
+        {
+          "order": 55,
+          "title": "Peer Reviewer / Consultant",
+          "layout": "1_Section heading with image (white)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Peer Reviewer / Consultant",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 56,
+          "title": "AI as Peer Reviewer / Consultant",
+          "layout": "Title Only",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "AI as Peer Reviewer / Consultant",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Label Description List",
+              "nodes": [
+                {
+                  "id": "{DF025068-FC1F-4590-A4AC-52D55EB37B67}",
+                  "text": "Strengths",
+                  "children": [
+                    {
+                      "id": "{ED24D841-B558-904E-BC04-0E3CE0279E91}",
+                      "text": "Can always supply knowledge",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{206CA9AB-644A-7741-8CA5-0D50DFA17770}",
+                      "text": "Can be informal",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{9834020F-1E66-A74E-92B2-EB98C2DCAB64}",
+                      "text": "Can always give feedback",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_085C07A03DDC4A158B5F1F0DCEA90FC1.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{E0F79E92-57D4-E64D-90EF-F6FA61E39A57}",
+                  "text": "Dangers",
+                  "children": [
+                    {
+                      "id": "{7515EB26-4461-5240-955D-D5B77ECB696F}",
+                      "text": "Can be a people pleaser",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{0CF58179-A600-524F-A500-6FC7AB4DE296}",
+                      "text": "Can be wrong",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_AA62B8E1BCE65F4A94732D9C44985732.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 57,
+          "title": "Get feedback on ideas",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Get feedback on ideas",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Ask for critique of controversial statements but keep the discussion going",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_57_6.png",
+              "alt": "Media Placeholder 5",
+              "caption": ""
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_57_8.png",
+              "alt": "Picture 7",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 58,
+          "title": "Remember",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Remember",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_58_4.png",
+              "alt": "Picture 3",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 59,
+          "title": "Explore subtleties and push back",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Explore subtleties and push back",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Don’t always take the subtle interpretations of ideas as given",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_59_9.png",
+              "alt": "Picture 8",
+              "caption": ""
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_59_7.png",
+              "alt": "Picture 6",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 60,
+          "title": "What what the model looked at",
+          "layout": "Screenshot description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "What what the model looked at",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_60_9.png",
+              "alt": "Picture 8",
+              "caption": ""
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_60_7.png",
+              "alt": "Picture 6",
+              "caption": ""
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Look at what information the model used to give you the answer – sometimes it’s just working off quotes not deep knowledge",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 61,
+          "title": "Models matter",
+          "layout": "Side bar title with text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Models matter",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "GPT-5 Thinking",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "(GPT-5 Pro)",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "Claude 4.5 Opus",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "Gemini 3 Pro",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 62,
+          "title": "Important!",
+          "layout": "Half page title with text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Important!",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "You are each responsible for any output of ChatGPT we choose to use in our work.",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 63,
+          "title": "Remember! People can also make mistakes.",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Remember! People can also make mistakes.",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 64,
+          "title": "Gema et al. 2024 on Errors in MMLU",
+          "layout": "Quote",
+          "notes": "http://arxiv.org/abs/2406.04127",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Gema et al. 2024 on Errors in MMLU",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "“we find that 57% of the analysed questions in the Virology subset contain errors.”",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_64_4.png",
+              "alt": "Picture 3",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 65,
+          "title": "Gawande, Atul, The Checklist Manifesto",
+          "layout": "Quote",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Gawande, Atul, The Checklist Manifesto",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "\"We are all plagued by failures—by missed subtleties, overlooked knowledge, and outright errors.\"",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_65_5.png",
+              "alt": "Picture 4",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 66,
+          "title": "Yes, we need to solve the hallucination problem but the solution is exactly the same we put into place to solve this",
+          "layout": "Half page title",
+          "notes": "https://link.springer.com/chapter/10.1007/978-3-031-07105-8_8",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Yes, we need to solve the hallucination problem but the solution is exactly the same we put into place to solve this",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_66_3.png",
+              "alt": "Picture 2",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 67,
+          "title": "Why do we need this?",
+          "layout": "Half page title",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Why do we need this?",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_67_4.png",
+              "alt": "Picture 3",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 68,
+          "title": "Bender and Hanna, The AI Con, 2025",
+          "layout": "Quote",
+          "notes": ".” ([Bender and Hanna, 2025, p. 59](zotero://select/library/items/CYJAR4ZZ)) ([epub](zotero://open-pdf/library/items/ZVQ2VUJB?cfi=epubcfi(%2F6%2F16!%2F4%2F2%2F22%2F6%2C%2F1%3A1009%2C%2F4%2F2%2F1%3A0)&annotation=F2R3D8NV))",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Bender and Hanna, The AI Con, 2025",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "“Time reported that OpenAI had subcontracted Kenyan workers making less than two dollars a day to filter out gore, hate speech, child sexual abuse material, and pornographic images from ChatGPT and OpenAI’s image generation tool DALL-E. Those workers were lured in by the prospect of breaking into the lucrative field of computing, but ended up with PTSD and ravaged personal relationships due to mental health issues”",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 69,
+          "title": "Time 2023",
+          "layout": "Quote",
+          "notes": "https://time.com/6247678/openai-chatgpt-kenya-workers/",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Time 2023",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_69_5.png",
+              "alt": "Picture 4",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 70,
+          "title": "Asking questions about text",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Asking questions about text",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "ChatGPT can answer factual  questions about a short text fairly reliably.",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_70_7.mp4",
+              "title": "CleanShot 2025-11-04 at 1612from Google Chrome with ChatGPT"
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_70_7.png",
+              "alt": "CleanShot 2025-11-04 at 1612from Google Chrome with ChatGPT",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 71,
+          "title": "Using ChatGPT to fact check",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Using ChatGPT to fact check",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Using ChatGPT to fact check claims in published literature is a good complement to reading",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_71_5.mp4",
+              "title": "CleanShot 2025-11-04 at 1619from Google Chrome with ChatGPT"
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_71_5.png",
+              "alt": "CleanShot 2025-11-04 at 1619from Google Chrome with ChatGPT",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 72,
+          "title": "Where does ChatGPT get its answers",
+          "layout": "Title Only",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Where does ChatGPT get its answers",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Label Description List",
+              "nodes": [
+                {
+                  "id": "{DF025068-FC1F-4590-A4AC-52D55EB37B67}",
+                  "text": "Model knowledge",
+                  "children": [
+                    {
+                      "id": "{DA875C29-E78D-4A74-AA32-19B0FBEA3FC3}",
+                      "text": "Learned from training data",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{E0F0AB5F-C4C1-2148-B331-8A657A4EF0BB}",
+                      "text": "Cut off Sept 2024\nCan make mistakes",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{3C22D928-C5A0-401C-8804-EACDA78006A4}",
+                      "text": "Not retrieved from a database",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_085C07A03DDC4A158B5F1F0DCEA90FC1.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{4243637A-B2D8-42FB-AB2D-77B338BA7765}",
+                  "text": "Search results",
+                  "children": [
+                    {
+                      "id": "{AB8D96DE-1399-424C-A90F-BC92D40DE794}",
+                      "text": "Limited by what can be found",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{1F53A0B9-660E-42AE-B0B5-197FFA2D8EBA}",
+                      "text": "Not all web pages are accessible",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{844B0E62-62CB-8E49-874D-73239509AA9A}",
+                      "text": "Can make mistakes",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_3F865597A4EF46FA9A5801F7EEF79A2B.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{CC413EDC-6CE1-4ED7-AE45-1634430DFC8E}",
+                  "text": "Uploaded documents",
+                  "children": [
+                    {
+                      "id": "{E7D606E5-E11A-4AFD-AA2D-3918A2885220}",
+                      "text": "Context limits",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{FA1CF721-DB9C-44F2-BC0C-C06015709F98}",
+                      "text": "Can make mistakes",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_9595E5758F444198957DB3721E39FF24.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 73,
+          "title": "Take this seriously",
+          "layout": "Title Only",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Take this seriously",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_73_5.png",
+              "alt": "Picture 4",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 74,
+          "title": "Model’s own knowledge",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Model’s own knowledge",
+              "level": 1
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_74_6.mp4",
+              "title": "CleanShot 2025-10-10 at 1217from Google Chrome with ChatGPT"
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_74_6.png",
+              "alt": "CleanShot 2025-10-10 at 1217from Google Chrome with ChatGPT",
+              "caption": ""
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "For simple questions the model can rely on its own knowledge",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 75,
+          "title": "Triggering search to check knowledge",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Triggering search to check knowledge",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Ask for search to expand or check the model’s knowledge",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_75_5.mp4",
+              "title": "CleanShot 2025-10-10 at 1222from Google Chrome with Oxford museum name"
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_75_5.png",
+              "alt": "CleanShot 2025-10-10 at 1222from Google Chrome with Oxford museum name",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 76,
+          "title": "Multistep actions with Thinking model",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Multistep actions with Thinking model",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Switch to “GPT-5 Thinking” for multi-step search tasks",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_76_5.mp4",
+              "title": "CleanShot 2025-10-09 at 1057from Google Chrome with ChatGPT"
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_76_5.png",
+              "alt": "CleanShot 2025-10-09 at 1057from Google Chrome with ChatGPT",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 77,
+          "title": "Important! Models are similar and they have similar tools – but they vary.",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Important! Models are similar and they have similar tools – but they vary.",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 78,
+          "title": "When tools are needed",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "When tools are needed",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Without a tool the model powering ChatGPT cannot count words",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_78_7.mp4",
+              "title": "CleanShot 2025-10-10 at 1304from Google Chrome with ChatGPT"
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_78_7.png",
+              "alt": "CleanShot 2025-10-10 at 1304from Google Chrome with ChatGPT",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 79,
+          "title": "Often the model in ChatGPT or Gemini will use the tool automatically, but you can also ask for it.",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Often the model in ChatGPT or Gemini will use the tool automatically, but you can also ask for it.",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 80,
+          "title": "Ask for a tool",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Ask for a tool",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Best tool to ask for is Code Interpreter",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_80_5.mp4",
+              "title": "CleanShot 2025-10-10 at 1306from Google Chrome with Abstract length analysis"
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_80_5.png",
+              "alt": "CleanShot 2025-10-10 at 1306from Google Chrome with Abstract length analysis",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 81,
+          "title": "Build in verification",
+          "layout": "Screenshot description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Build in verification",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Think about whether your task has a built-in verification feedback and if not, try to add it in.",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_81_4.png",
+              "alt": "Media Placeholder 3",
+              "caption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tutor",
+      "slides": [
+        {
+          "order": 83,
+          "title": "Tutor",
+          "layout": "1_Section heading with image (white)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Tutor",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 84,
+          "title": "AI as Tutor",
+          "layout": "Title Only",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "AI as Tutor",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Label Description List",
+              "nodes": [
+                {
+                  "id": "{AE44BF75-061E-2B4C-9EA1-70AE0278426E}",
+                  "text": "Dangers",
+                  "children": [
+                    {
+                      "id": "{BBA1C400-9CF1-0545-9FD3-3A2F15AB95A9}",
+                      "text": "Can make mistakes",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{DAEFB65A-80E0-6A4E-BC72-095EA03BD46C}",
+                      "text": "Does not have the whole context",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{D4A85CED-F5EA-FB42-8E37-F087C3AA305E}",
+                      "text": "Can explain too quickly or too much",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{CB7F31DA-1EF0-784B-A749-F2BAA287EED7}",
+                      "text": "Can subtly misunderstand",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_96F2EAAA251E654CAFE388012A8031B4.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{DF025068-FC1F-4590-A4AC-52D55EB37B67}",
+                  "text": "Strengths",
+                  "children": [
+                    {
+                      "id": "{FB83B167-1EAF-D640-A9F2-9AE7838D046D}",
+                      "text": "Can walk you through any issue",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{091A8B6B-0A1D-BF45-A4DC-6001AE2C594A}",
+                      "text": "Doesn't get tired\n",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_085C07A03DDC4A158B5F1F0DCEA90FC1.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 85,
+          "title": "Focus on what matters.",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Focus on what matters.",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 86,
+          "title": "The point of learning is to be able to these yourself",
+          "layout": "Side bar title with text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "The point of learning is to be able to these yourself",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Identify",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "Summarise",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "Debate",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "arguments",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 87,
+          "title": "AI as a tutor can help you build scaffolding for better cognitive engagement.",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "AI as a tutor can help you build scaffolding for better cognitive engagement.",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_87_1026.png",
+              "alt": "Picture 2",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 88,
+          "title": "What not to do:  Ask for summary",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "What not to do: \u000bAsk for summary",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_88_5.png",
+              "alt": "Picture 4",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 89,
+          "title": "You should be using the model’s ability to get to a place where you know enough to be able to construct this summary.",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "You should be using the model’s ability to get to a place where you know enough to be able to construct this summary.",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 90,
+          "title": "Step 1:  Ask for bullets",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Step 1: \u000bAsk for bullets",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_90_5.png",
+              "alt": "Picture 4",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 91,
+          "title": "Step 2:  Ask for propositions",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Step 2: \u000bAsk for propositions",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_91_4.png",
+              "alt": "Picture 3",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 92,
+          "title": "Step 2a:  Ask for propositions visualised",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Step 2a: \u000bAsk for propositions visualised",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_92_5.png",
+              "alt": "Picture 4",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 93,
+          "title": "Step 3:  Ask for terms",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Step 3: \u000bAsk for terms",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_93_2.png",
+              "alt": "Picture 1",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 94,
+          "title": "Step 4:  Ask for vocabulary",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Step 4: \u000bAsk for vocabulary",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_94_4.png",
+              "alt": "Picture 3",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 95,
+          "title": "Step 5:  Ask for sense checks",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Step 5: \u000bAsk for sense checks",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_95_2.png",
+              "alt": "Picture 1",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 96,
+          "title": "Step 6:  Make practice tools",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Step 6: \u000bMake practice tools",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_96_2.png",
+              "alt": "Picture 1",
+              "caption": ""
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_96_5.png",
+              "alt": "Picture 4",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 97,
+          "title": "Step 7:  Make it practical with examples",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Step 7: \u000bMake it practical with examples",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_97_2.png",
+              "alt": "Picture 1",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 98,
+          "title": "Step 8:  Explore context",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Step 8: \u000bExplore context",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_98_4.png",
+              "alt": "Picture 3",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 99,
+          "title": "Step 9:  Take a different perspective",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Step 9: \u000bTake a different perspective",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_99_2.png",
+              "alt": "Picture 1",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 100,
+          "title": "Step 10:  Exercise your brain",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Step 10: \u000bExercise your brain",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_100_4.png",
+              "alt": "Picture 3",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 101,
+          "title": "Remember",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Remember",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_101_4.png",
+              "alt": "Picture 3",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 102,
+          "title": "Change modalities",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Change modalities",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_102_5.png",
+              "alt": "Picture 4",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 103,
+          "title": "Suno",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Suno",
+              "level": 1
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_103_4.mp4",
+              "title": "“Rearticulate My Heart”"
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_103_5.mp4",
+              "title": "“The Ballad of Shifting Power”"
+            }
+          ]
+        },
+        {
+          "order": 104,
+          "title": "NotebookLM",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "NotebookLM",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_104_3.png",
+              "alt": "Picture 2",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 105,
+          "title": "Mindmap",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Mindmap",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_105_3.png",
+              "alt": "Picture 2",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 106,
+          "title": "Audio overview (podcast)",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Audio overview (podcast)",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_106_5.png",
+              "alt": "Picture 4",
+              "caption": ""
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_106_4.mp4",
+              "title": "Beyond_the_Blueprint__How__Hegemony_s_Shifting_Structures__Rede"
+            }
+          ]
+        },
+        {
+          "order": 107,
+          "title": "Video overview",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Video overview",
+              "level": 1
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_107_3.mp4",
+              "title": "Hegemony_s_Shifting_Structures"
+            }
+          ]
+        },
+        {
+          "order": 108,
+          "title": "Other ways to get pictures",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Other ways to get pictures",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 109,
+          "title": "NotebookLM",
+          "layout": "Title only for image or SmartArt",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "NotebookLM",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_109_5.png",
+              "alt": "Picture 4",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 110,
+          "title": "From Zotero to LLMs",
+          "layout": "Title only for image or SmartArt",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "From Zotero to LLMs",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_110_3.png",
+              "alt": "Picture 2",
+              "caption": ""
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_110_4.png",
+              "alt": "Picture 3",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 111,
+          "title": "Summarising in Google AI Studio gives you more control",
+          "layout": "Title only for image or SmartArt",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Summarising in Google AI Studio gives you more control",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_111_3.png",
+              "alt": "Picture 2",
+              "caption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Translator",
+      "slides": [
+        {
+          "order": 113,
+          "title": "Translator",
+          "layout": "1_Section heading with image (white)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Translator",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 114,
+          "title": "AI as Translator",
+          "layout": "Title Only",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "AI as Translator",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Label Description List",
+              "nodes": [
+                {
+                  "id": "{AE44BF75-061E-2B4C-9EA1-70AE0278426E}",
+                  "text": "Dangers",
+                  "children": [
+                    {
+                      "id": "{CB7F31DA-1EF0-784B-A749-F2BAA287EED7}",
+                      "text": "Can make mistakes\nCan get in the way of learning",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_96F2EAAA251E654CAFE388012A8031B4.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{DF025068-FC1F-4590-A4AC-52D55EB37B67}",
+                  "text": "Strengths",
+                  "children": [
+                    {
+                      "id": "{FB83B167-1EAF-D640-A9F2-9AE7838D046D}",
+                      "text": "Speaks (almost) any language",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{32A8E76F-2464-3543-A82B-3021F413AAD7}",
+                      "text": "Can translate styles\nCan translate modalities\nCan translate ideas",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_085C07A03DDC4A158B5F1F0DCEA90FC1.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 115,
+          "title": "Transcription with Gemini 3 Pro",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Transcription with Gemini 3 Pro",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_115_3.png",
+              "alt": "Picture 2",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 116,
+          "title": "Get Lecture Notes from a YouTube video",
+          "layout": "Title only for image or SmartArt",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Get Lecture Notes from a YouTube video",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_116_3.png",
+              "alt": "Picture 2",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 117,
+          "title": "Get a transcript and description of what’s on screen",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Get a transcript and description of what’s on screen",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_117_4.png",
+              "alt": "Picture 3",
+              "caption": ""
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_117_3.png",
+              "alt": "Picture 2",
+              "caption": ""
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_117_5.png",
+              "alt": "Picture 4",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 118,
+          "title": "Transcribe and translate in any language",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Transcribe and translate in any language",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_118_3.png",
+              "alt": "Picture 2",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 119,
+          "title": "Simple research project illustration",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Simple research project illustration",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 120,
+          "title": "Starting point",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Starting point",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_120_5.png",
+              "alt": "Picture 4",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 121,
+          "title": "Basic Computer Terms, 1966",
+          "layout": "Quote",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Basic Computer Terms, 1966",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "\"Computers don't think. It's us people who do the thinking. Computers simply process the data that you give them, and they process it in the way you tell them.\"",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 122,
+          "title": "Question: How have people thought about relationship of people and computers throughout history as exemplified in educational and promotional videos?",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Question: How have people thought about relationship of people and computers throughout history as exemplified in educational and promotional videos?",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 123,
+          "title": "Prompts and links on   viewfromhistory. semanticmachines.fyi",
+          "layout": "Sidebar title without text",
+          "notes": "https://semanticmachines.notion.site/computing-history-quotes",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Prompts and links on \u000b\u000bviewfromhistory.\u000bsemanticmachines.fyi",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_123_4.png",
+              "alt": "Picture 3",
+              "caption": ""
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_123_5.png",
+              "alt": "Picture 4",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 124,
+          "title": "Steps",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Steps",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "",
+              "nodes": [
+                {
+                  "id": "{2CA59D9D-6349-4FC1-93BA-039684734BFD}",
+                  "text": "Share report",
+                  "children": [
+                    {
+                      "id": "{6737E40D-6B01-4A40-AC54-976F191CBB76}",
+                      "text": "Gemini 2.5 Pro",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{89C0B54C-3860-274F-95C1-26B7622550AD}",
+                      "text": "Gemini Deep Research",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": null,
+                  "icon_alt": null
+                },
+                {
+                  "id": "{3305B8F0-3CEE-4AC9-95A9-20707EC98D06}",
+                  "text": "Select relevant quotes with timecodes",
+                  "children": [
+                    {
+                      "id": "{38F0A899-6011-EA42-B86E-0596767DF953}",
+                      "text": "Gemini 2.5 Pro ",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": null,
+                  "icon_alt": null
+                },
+                {
+                  "id": "{0A0563F6-384E-47C5-A1E9-09D33F9DD86C}",
+                  "text": "Extract information from videos",
+                  "children": [
+                    {
+                      "id": "{42D27E35-CAA3-8245-BAB2-63ABC222AA47}",
+                      "text": "Gemini 2.5 Pro in Google AI Studio",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": null,
+                  "icon_alt": null
+                },
+                {
+                  "id": "{4C5FC625-5337-4159-B936-0F3235C0689A}",
+                  "text": "Identify themes",
+                  "children": [
+                    {
+                      "id": "{CEB5FAB1-6210-AD46-9B31-6152814CD0F0}",
+                      "text": "Gemini 2.5 Pro ",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": null,
+                  "icon_alt": null
+                },
+                {
+                  "id": "{2648F19F-50CE-4535-AB97-592604D6386A}",
+                  "text": "Collect videos",
+                  "children": [
+                    {
+                      "id": "{D30EB74B-6EFD-7346-94F8-38337A8EB11E}",
+                      "text": "YouTube algorithm + search",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": null,
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 125,
+          "title": "Multimodal  translation capabilities",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Multimodal  translation capabilities",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_125_3.png",
+              "alt": "Picture 2",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 126,
+          "title": "Long context",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Long context",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_126_3.png",
+              "alt": "Picture 2",
+              "caption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Toolmaker",
+      "slides": [
+        {
+          "order": 128,
+          "title": "Toolmaker",
+          "layout": "1_Section heading with image (white)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Toolmaker",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 129,
+          "title": "AI as Toolmaker",
+          "layout": "Title Only",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "AI as Toolmaker",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Label Description List",
+              "nodes": [
+                {
+                  "id": "{AE44BF75-061E-2B4C-9EA1-70AE0278426E}",
+                  "text": "Dangers",
+                  "children": [
+                    {
+                      "id": "{DC172B5A-A691-764A-942F-B0F86D430C91}",
+                      "text": "Can become a time sink",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{CB7F31DA-1EF0-784B-A749-F2BAA287EED7}",
+                      "text": "Requires a lot of learning",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{450C11F1-1756-5840-9EEA-210467C49F3B}",
+                      "text": "Can make as well as break tools",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_96F2EAAA251E654CAFE388012A8031B4.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{DF025068-FC1F-4590-A4AC-52D55EB37B67}",
+                  "text": "Strengths",
+                  "children": [
+                    {
+                      "id": "{FB83B167-1EAF-D640-A9F2-9AE7838D046D}",
+                      "text": "Can develop useful tool to use across learning",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_085C07A03DDC4A158B5F1F0DCEA90FC1.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 130,
+          "title": "Dean W. Ball, Among the Agents,9 Jan 2026",
+          "layout": "Quote",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Dean W. Ball, Among the Agents,9 Jan 2026",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "\"By the end of this year, the least important thing you will be able to do with frontier AI systems will be getting chatbots to answer questions.\"",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 131,
+          "title": "Built with Google AI Studio",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Built with Google AI Studio",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Website with the full transcript generated earlier linked to the MP3 with links to people and places mentioned",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_131_6.png",
+              "alt": "Media Placeholder 5",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 132,
+          "title": "More on edutools.fyi",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "More on edutools.fyi",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_132_3.png",
+              "alt": "Picture 2",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 133,
+          "title": "Example of a simple app built with Google AI Studio",
+          "layout": "Title only (for single text lines)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Example of a simple app built with Google AI Studio",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "order": 134,
+          "title": "Let’s start for free with Google AI Studio",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Let’s start for free with Google AI Studio",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "ai.dev",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "Aimed at developers.",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "Free for everyone.",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "Easy to use.",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_134_7.png",
+              "alt": "Picture 6",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 135,
+          "title": "Simple language project – part 1",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Simple language project – part 1",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Start with a prompt that describes everything you want and wait.",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_135_6.mp4",
+              "title": "CleanShot 2026-01-09 at 10.50.50"
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_135_6.png",
+              "alt": "CleanShot 2026-01-09 at 10.50.50",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 136,
+          "title": "Simple language project – part 2",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Simple language project – part 2",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Test everything and find what’s missing.",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_136_7.mp4",
+              "title": "CleanShot 2026-01-09 at 10.56.05"
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_136_7.png",
+              "alt": "CleanShot 2026-01-09 at 10.56.05",
+              "caption": ""
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_136_8.mp4",
+              "title": "CleanShot 2026-01-09 at 10.58.21"
+            }
+          ]
+        },
+        {
+          "order": 137,
+          "title": "Simple language project – part 3",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Simple language project – part 3",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Ask for more more.",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_137_10.mp4",
+              "title": "CleanShot 2026-01-09 at 11.05.25"
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_137_10.png",
+              "alt": "CleanShot 2026-01-09 at 11.05.25",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 138,
+          "title": "Simple language project – part 4",
+          "layout": "Video with description",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Simple language project – part 4",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Deploy to Google cloud project.",
+                  "level": 0,
+                  "children": []
+                },
+                {
+                  "text": "Free but credit card required.",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "src": "/assets/videos/slide_138_6.mp4",
+              "title": "CleanShot 2026-01-09 at 11.09.55"
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_138_6.png",
+              "alt": "CleanShot 2026-01-09 at 11.09.55",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "order": 139,
+          "title": "What made this happen?",
+          "layout": "Sidebar title without text",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "What made this happen?",
+              "level": 1
+            },
+            {
+              "type": "smart_art",
+              "layout": "Icon Vertical Solid List",
+              "nodes": [
+                {
+                  "id": "{F3978EDE-6008-4F22-B9BE-FC27F7001E33}",
+                  "text": "Gemini 3 Pro",
+                  "children": [
+                    {
+                      "id": "{C6159217-D460-42FC-9137-19C208C17B67}",
+                      "text": "Language skills",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{B695617F-030B-41FA-B920-501DFCDB5E08}",
+                      "text": "Agentic skills",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{2C1CD648-1366-454B-B298-5EB48301AB7F}",
+                      "text": "Coding skills",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_FD06E7FF4EA2425081CCD80CEB2140C4.png",
+                  "icon_alt": null
+                },
+                {
+                  "id": "{A4EE413B-D638-4469-A12E-B0C3811DD47F}",
+                  "text": "Google AI Studio",
+                  "children": [
+                    {
+                      "id": "{E44E8403-C226-4C24-AF37-FA69A3B45A33}",
+                      "text": "Model harness",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    },
+                    {
+                      "id": "{D6698690-EE73-4D78-BEB2-01E088518D33}",
+                      "text": "Agentic builder",
+                      "children": [],
+                      "level": 2,
+                      "icon": null,
+                      "icon_alt": null
+                    }
+                  ],
+                  "level": 1,
+                  "icon": "/assets/images/icons/sa_0CC26D58BC9340DC959E67B2371B826F.png",
+                  "icon_alt": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Final slides",
+      "slides": [
+        {
+          "order": 141,
+          "title": "Thank you",
+          "layout": "Final slide 2",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "Thank you",
+              "level": 1
+            },
+            {
+              "type": "list",
+              "style": "bullet",
+              "items": [
+                {
+                  "text": "Dominik.Lukes@oerc.ox.ac.uk",
+                  "level": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 142,
+          "title": "This presentation is licensed under Creative Commons By Attribution license except where otherwise noted.  Icons and stock photos licensed under Microsoft Premium Content and cannot be reused outside this document.",
+          "layout": "Section heading with image (blue)",
+          "notes": "",
+          "content": [
+            {
+              "type": "heading",
+              "text": "This presentation is licensed under Creative Commons By Attribution license except where otherwise noted.\u000b\u000bIcons and stock photos licensed under Microsoft Premium Content and cannot be reused outside this document.",
+              "level": 1
+            },
+            {
+              "type": "image",
+              "src": "/assets/images/slides/slide_142_5.png",
+              "alt": "Content Placeholder 4",
+              "caption": ""
             }
           ]
         }

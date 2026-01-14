@@ -10,36 +10,36 @@ interface FeaturedLink {
 
 export const sessionInfo = {
   // Main presentation title
-  title: "{{TITLE}}",
+  title: "From intern to toolmaker",
   // Subtitle or tagline
-  subtitle: "{{SUBTITLE}}",
+  subtitle: "Five roles AI can play to support research and learning",
 
   // Link to the talk/presentation page (optional)
   talkPageUrl: "",
   talkPageLabel: "Talk Page", // e.g., "Talk Page", "Webinar Recording", "Session Info"
 
   speaker: {
-    name: "{{SPEAKER_NAME}}",
-    affiliation: "{{AFFILIATION}}",
-    email: "{{EMAIL}}",
+    name: "Dominik Lukeš",
+    affiliation: "Oxford e-Research Centre, University of Oxford",
+    email: "Dominik.Lukes@oerc.ox.ac.uk",
     links: {
-      website: "{{WEBSITE_URL}}",
+      website: "https://oerc.ox.ac.uk/ai-centre/about/staff/dominik-lukes",
     },
-    bio: `{{SPEAKER_BIO}}`,
+    bio: `Research facilitator and trainer at the Oxford e-Research Centre, helping researchers leverage AI and computational methods for research and learning.`,
   },
 
   // Event/conference details (optional - leave empty if standalone presentation)
   event: {
     name: "", // e.g., "AULC 2026" - leave empty if no conference
-    date: "{{EVENT_DATE}}", // e.g., "Friday, 9 January 2026"
+    date: "January 2026", // e.g., "Friday, 9 January 2026"
     time: "", // e.g., "14:00 - 15:15"
     location: "", // e.g., "Room 301"
-    type: "{{SESSION_TYPE}}", // e.g., "Workshop", "Talk", "Seminar", "Webinar"
+    type: "Talk", // e.g., "Workshop", "Talk", "Seminar", "Webinar"
     sessionLink: "", // Link to conference program page (optional)
   },
 
   // Multi-paragraph abstract (use \n\n for paragraph breaks)
-  abstract: `{{ABSTRACT}}`,
+  abstract: `Exploring five key roles that AI can play in supporting research and learning: from basic task automation to sophisticated tool creation. This session examines practical applications and considerations for researchers looking to integrate AI into their workflows.`,
 
   // Key topics covered in the presentation (optional)
   // These will be displayed as highlights on the home page
