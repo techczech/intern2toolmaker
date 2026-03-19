@@ -1,0 +1,48 @@
+// Session information configuration
+// Fill in details relevant to your presentation
+// Optional fields can be left empty ("") or arrays empty ([])
+
+import type { FeaturedLink } from './sessionInfo.types';
+
+export const sessionInfo = {
+  // Main presentation title
+  title: "",
+  // Subtitle or tagline
+  subtitle: "",
+
+  // Link to the talk/presentation page (optional)
+  talkPageUrl: "",
+  talkPageLabel: "",
+
+  speaker: {
+    name: "",
+    affiliation: "",
+    email: "",
+    links: {
+      website: "",
+    },
+    bio: "",
+  },
+
+  // Event/conference details
+  event: {
+    name: "",
+    date: "",
+    time: "",
+    location: "",
+    type: "",
+    sessionLink: "",
+  },
+
+  // Multi-paragraph abstract (use \n\n for paragraph breaks)
+  abstract: "",
+
+  // Key topics covered in the presentation
+  keyTopics: [] as string[],
+
+  // Featured links section
+  featuredLinks: {
+    title: "",
+    items: [] as FeaturedLink[],
+  },
+};

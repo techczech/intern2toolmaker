@@ -1,0 +1,331 @@
+{
+  "people": [
+    {
+      "name": "Dominik Lukeš",
+      "role": "AI Consultant for Research and Strategy, Oxford e-Research Centre, University of Oxford",
+      "slideIndex": 1
+    },
+    {
+      "name": "Stephen King",
+      "role": "Author, On Writing",
+      "slideIndex": 21
+    },
+    {
+      "name": "Dell'Acqua et al.",
+      "role": "Researchers, Harvard Business School study on AI's jagged technological frontier",
+      "slideIndex": 29
+    },
+    {
+      "name": "Walters & Wilder",
+      "role": "Researchers studying fabrication and errors in AI-generated bibliographies",
+      "slideIndex": 33
+    },
+    {
+      "name": "Gema et al.",
+      "role": "Researchers who found 57% of MMLU Virology questions contain errors",
+      "slideIndex": 88
+    },
+    {
+      "name": "Atul Gawande",
+      "role": "Author, The Checklist Manifesto",
+      "slideIndex": 90
+    },
+    {
+      "name": "Emily Bender & Alex Hanna",
+      "role": "Authors, The AI Con (2025)",
+      "slideIndex": 93
+    },
+    {
+      "name": "Dean W. Ball",
+      "role": "Author, Among the Agents (2026)",
+      "slideIndex": 150
+    }
+  ],
+  "quotes": [
+    {
+      "text": "I want to suggest that to write to your best abilities, it behooves you to construct your own toolbox and then build up enough muscle so you can carry it with you. Then, instead of looking at a hard job and getting discouraged, you will perhaps seize the correct tool and get immediately to work.",
+      "attribution": "Stephen King, On Writing",
+      "slideIndex": 21,
+      "topic": "learning",
+      "extractedFromImage": false
+    },
+    {
+      "text": "We suggest that the capabilities of AI create a 'jagged technological frontier' where some tasks are easily done by AI, while others, though seemingly similar in difficulty level, are outside the current capability of AI.",
+      "attribution": "Dell'Acqua et al. 2023, Navigating the Jagged Technological Frontier",
+      "slideIndex": 29,
+      "topic": "ai_technology",
+      "extractedFromImage": false
+    },
+    {
+      "text": "We find that 57% of the analysed questions in the Virology subset contain errors.",
+      "attribution": "Gema et al. 2024, on Errors in MMLU",
+      "slideIndex": 88,
+      "topic": "ai_limitations",
+      "extractedFromImage": false
+    },
+    {
+      "text": "We are all plagued by failures—by missed subtleties, overlooked knowledge, and outright errors.",
+      "attribution": "Atul Gawande, The Checklist Manifesto",
+      "slideIndex": 90,
+      "topic": "human_error",
+      "extractedFromImage": false
+    },
+    {
+      "text": "By the end of this year, the least important thing you will be able to do with frontier AI systems will be getting chatbots to answer questions.",
+      "attribution": "Dean W. Ball, Among the Agents, 9 Jan 2026",
+      "slideIndex": 150,
+      "topic": "ai_future",
+      "extractedFromImage": false
+    }
+  ],
+  "organizations": [
+    {
+      "name": "OpenAI",
+      "description": "Creator of ChatGPT and GPT models"
+    },
+    {
+      "name": "Anthropic",
+      "description": "Creator of Claude AI models"
+    },
+    {
+      "name": "Google",
+      "description": "Creator of Gemini models, Google AI Studio, and NotebookLM"
+    },
+    {
+      "name": "Oxford e-Research Centre",
+      "description": "University of Oxford centre supporting research with AI and computational methods"
+    },
+    {
+      "name": "Harvard Business School",
+      "description": "Source of the 'jagged frontier' study on AI capabilities"
+    }
+  ],
+  "tools": [
+    {
+      "name": "ChatGPT",
+      "description": "Conversational AI chatbot from OpenAI, the most widely used generative AI tool",
+      "url": "https://chatgpt.com",
+      "category": "chatbot"
+    },
+    {
+      "name": "Claude",
+      "description": "Conversational AI chatbot from Anthropic, known for thoughtful and nuanced responses",
+      "url": "https://claude.ai",
+      "category": "chatbot"
+    },
+    {
+      "name": "Gemini",
+      "description": "Conversational AI chatbot from Google with strong multimodal capabilities",
+      "url": "https://gemini.google.com",
+      "category": "chatbot"
+    },
+    {
+      "name": "Google AI Studio",
+      "description": "Free platform for exploring frontier AI model capabilities, ideal for building simple AI tools",
+      "url": "https://ai.dev",
+      "category": "development"
+    },
+    {
+      "name": "NotebookLM",
+      "description": "AI-assisted note-taking and research tool from Google that can generate podcasts, mindmaps, and summaries",
+      "url": "https://notebooklm.google.com",
+      "category": "research"
+    },
+    {
+      "name": "Perplexity",
+      "description": "Web search tool with academic source filtering for research",
+      "url": "https://perplexity.ai",
+      "category": "research"
+    },
+    {
+      "name": "Elicit",
+      "description": "AI research tool for literature reviews using Semantic Scholar",
+      "url": "https://elicit.com",
+      "category": "research"
+    },
+    {
+      "name": "Consensus",
+      "description": "AI tool for literature reviews with academic focus",
+      "url": "https://consensus.app",
+      "category": "research"
+    },
+    {
+      "name": "Edison Scientific",
+      "description": "Automated scientist tool for research",
+      "url": "",
+      "category": "research"
+    },
+    {
+      "name": "Manus",
+      "description": "Web search agent that builds websites from research",
+      "url": "https://manus.im",
+      "category": "research"
+    },
+    {
+      "name": "Notion AI",
+      "description": "AI-powered workspace for organizing work in databases",
+      "url": "https://notion.so",
+      "category": "productivity"
+    },
+    {
+      "name": "Suno",
+      "description": "AI music generation tool — can turn text into songs",
+      "url": "https://suno.com",
+      "category": "development"
+    },
+    {
+      "name": "ElevenLabs Reader",
+      "description": "Listen to documents and articles read aloud with AI voices",
+      "url": "https://elevenlabs.io/text-reader",
+      "category": "productivity"
+    },
+    {
+      "name": "Cursor",
+      "description": "AI-powered code editor for building software",
+      "url": "https://cursor.com",
+      "category": "development"
+    },
+    {
+      "name": "Loveable",
+      "description": "AI app builder for creating applications without coding",
+      "url": "https://lovable.dev",
+      "category": "development"
+    },
+    {
+      "name": "Zotero",
+      "description": "Free reference management tool for collecting and organizing research",
+      "url": "https://zotero.org",
+      "category": "research"
+    },
+    {
+      "name": "DeepSeek",
+      "description": "Open-source AI chatbot and model",
+      "url": "https://chat.deepseek.com",
+      "category": "chatbot"
+    },
+    {
+      "name": "Grok",
+      "description": "AI chatbot from xAI",
+      "url": "https://grok.com",
+      "category": "chatbot"
+    }
+  ],
+  "terms": [
+    {
+      "term": "Large Language Model (LLM)",
+      "definition": "An AI model trained on vast text data to generate and understand language — the core technology behind ChatGPT, Claude, and Gemini"
+    },
+    {
+      "term": "Jagged Frontier",
+      "definition": "The concept that AI capabilities are uneven — some seemingly hard tasks are easy for AI while some seemingly easy tasks are impossible"
+    },
+    {
+      "term": "Hallucination",
+      "definition": "When an AI model generates plausible-sounding but incorrect information, particularly fabricated references and links"
+    },
+    {
+      "term": "Orchestration",
+      "definition": "Workflows built around AI model outputs using traditional computing — combining model intelligence with tools like search and code"
+    },
+    {
+      "term": "Model",
+      "definition": "The raw AI intelligence that outputs sequences of tokens, distinct from the orchestration layer that wraps it"
+    },
+    {
+      "term": "Multimodality",
+      "definition": "The ability of AI models to work across different types of input and output — text, images, audio, video"
+    },
+    {
+      "term": "Code Interpreter",
+      "definition": "A tool within AI chatbots that allows the model to write and execute computer code to solve problems"
+    },
+    {
+      "term": "Deep Research",
+      "definition": "AI-powered multi-step research tools that search, synthesise, and report on topics with citations"
+    },
+    {
+      "term": "Deliberate Practice",
+      "definition": "A structured approach to skill development involving reflection and targeted repetition"
+    },
+    {
+      "term": "ICAP Framework",
+      "definition": "Cognition framework describing levels of learning engagement: Interactive, Constructive, Active, Passive"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://dominiklukes.net",
+      "title": "Dominik Lukeš — Personal Website",
+      "description": "Speaker's personal website with resources on AI for research and learning",
+      "slideIndex": 3,
+      "linkType": "personal"
+    },
+    {
+      "url": "https://ainewsroundup.pages.dev",
+      "title": "AI News Roundup",
+      "description": "Weekly AI news roundup curated by Dominik Lukeš",
+      "slideIndex": 3,
+      "linkType": "website"
+    },
+    {
+      "url": "https://deliberatepractice.dominiklukes.net",
+      "title": "Deliberate Practice Guide",
+      "description": "Guide to deliberate practice for building skills in research and study",
+      "slideIndex": 5,
+      "linkType": "website"
+    },
+    {
+      "url": "https://buildingyourlanguagemuscle.edutools.fyi",
+      "title": "Building Your Language Muscle",
+      "description": "Interactive workshop handout on developing academic language skills",
+      "slideIndex": 5,
+      "linkType": "website"
+    },
+    {
+      "url": "https://academicreading.edutools.fyi",
+      "title": "Academic Reading Workshop",
+      "description": "Interactive workshop handout on academic reading strategies",
+      "slideIndex": 5,
+      "linkType": "website"
+    },
+    {
+      "url": "https://edutools.fyi",
+      "title": "EduTools",
+      "description": "Collection of educational tools and workshop handouts built by Dominik Lukeš",
+      "slideIndex": 152,
+      "linkType": "website"
+    },
+    {
+      "url": "https://intern2toolmaker.pages.dev",
+      "title": "From Intern to Toolmaker — Handout Website",
+      "description": "Interactive web version of this presentation with slides, resources, and links",
+      "slideIndex": 161,
+      "linkType": "website"
+    },
+    {
+      "url": "https://ai.dev",
+      "title": "Google AI Studio",
+      "description": "Free platform aimed at developers for exploring frontier AI model capabilities — easy to use for building tools",
+      "slideIndex": 154,
+      "linkType": "tool"
+    }
+  ],
+  "dates": [
+    {
+      "date": "December 2022",
+      "event": "ChatGPT launched, reaching 1 million users in the first week",
+      "slideIndex": 26
+    },
+    {
+      "date": "September 2025",
+      "event": "ChatGPT reached 800 million weekly users",
+      "slideIndex": 26
+    },
+    {
+      "date": "9 January 2026",
+      "event": "Dean W. Ball published 'Among the Agents' on AI agents",
+      "slideIndex": 150
+    }
+  ],
+  "images": []
+}

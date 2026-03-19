@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { sessionInfo } from '../../data/sessionInfo';
+import { lectureNotes } from '../../data/lectureNotes';
 
 interface SiteHeaderProps {
   onOpenSearch?: () => void;
@@ -30,37 +31,45 @@ export default function SiteHeader({ onOpenSearch, onOpenHelp }: SiteHeaderProps
             className={isActive('/') && location.pathname === '/' ? 'active' : ''}
             title="Home (h)"
           >
-            Home
+            <u>H</u>ome
           </Link>
           <Link
             to="/slides"
             className={isActive('/slides') ? 'active' : ''}
             title="Slides (s)"
           >
-            Slides
+            <u>S</u>lides
+          </Link>
+          {lectureNotes.length > 0 && (
+            <Link
+              to="/lecture-notes"
+              className={isActive('/lecture-notes') ? 'active' : ''}
+              title="Lecture Notes (n)"
+            >
+              <u>N</u>otes
+            </Link>
+          )}
+          <Link
+            to="/resources"
+            className={isActive('/resources') ? 'active' : ''}
+            title="Index (i)"
+          >
+            <u>I</u>ndex
           </Link>
           <Link
             to="/media-gallery"
             className={isActive('/media-gallery') ? 'active' : ''}
             title="Media Gallery (m)"
           >
-            Media
-          </Link>
-          <Link
-            to="/resources"
-            className={isActive('/resources') ? 'active' : ''}
-            title="Resources (r)"
-          >
-            Resources
+            <u>M</u>edia
           </Link>
           <Link
             to="/about"
             className={isActive('/about') ? 'active' : ''}
-            title="About"
+            title="About (a)"
           >
-            About
+            <u>A</u>bout
           </Link>
-
           {/* Divider */}
           <div
             className="w-px h-5 mx-2"

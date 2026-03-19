@@ -1,0 +1,15 @@
+{
+  "processedAt": "2026-03-19T17:57:29.522075",
+  "backend": "lmstudio",
+  "model": "qwen/qwen3-vl-8b",
+  "imagesProcessed": 0,
+  "imagesSkipped": 119,
+  "quotesExtracted": 0,
+  "categoryCounts": {},
+  "tokensUsed": {
+    "input": 0,
+    "output": 0,
+    "total": 0
+  },
+  "durationSeconds": 0.0
+}

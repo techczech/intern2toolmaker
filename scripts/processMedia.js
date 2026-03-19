@@ -1,10 +1,71 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { execSync } from 'child_process';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.join(__dirname, '..');
+
+// Video compression settings
+const MAX_VIDEO_SIZE_MB = 25; // Cloudflare Pages limit
+const MAX_VIDEO_SIZE_BYTES = MAX_VIDEO_SIZE_MB * 1024 * 1024;
+
+// Check if ffmpeg is available
+function hasFFmpeg() {
+  try {
+    execSync('which ffmpeg', { stdio: 'ignore' });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+// Get video duration and size
+function getVideoInfo(videoPath) {
+  try {
+    const output = execSync(
+      `ffprobe -v error -show_entries format=duration,size -of default=noprint_wrappers=1 "${videoPath}"`,
+      { encoding: 'utf-8' }
+    );
+    const duration = parseFloat(output.match(/duration=([\d.]+)/)?.[1] || 0);
+    const size = parseInt(output.match(/size=(\d+)/)?.[1] || 0);
+    return { duration, size };
+  } catch (error) {
+    console.error(`Failed to get video info for ${path.basename(videoPath)}`);
+    return null;
+  }
+}
+
+// Compress video using ffmpeg
+function compressVideo(inputPath, outputPath, targetSizeMB) {
+  const info = getVideoInfo(inputPath);
+  if (!info) return false;
+
+  const { duration, size } = info;
+  const currentSizeMB = size / (1024 * 1024);
+
+  // Calculate target bitrate (80% of target size to leave headroom)
+  const targetBitsPerSecond = ((targetSizeMB * 0.8 * 8 * 1024 * 1024) / duration) - 64000; // subtract audio bitrate
+  const videoBitrate = Math.max(180, Math.floor(targetBitsPerSecond / 1000)); // kbps, min 180k
+
+  console.log(`    Compressing ${path.basename(inputPath)} (${currentSizeMB.toFixed(1)}MB → target ${targetSizeMB}MB)...`);
+
+  try {
+    execSync(
+      `ffmpeg -i "${inputPath}" -c:v libx264 -b:v ${videoBitrate}k -c:a aac -b:a 64k -movflags +faststart "${outputPath}" -y`,
+      { stdio: 'pipe' }
+    );
+
+    const newSize = fs.statSync(outputPath).size;
+    const newSizeMB = newSize / (1024 * 1024);
+    console.log(`    ✓ Compressed to ${newSizeMB.toFixed(1)}MB (${videoBitrate}kbps)`);
+    return true;
+  } catch (error) {
+    console.error(`    ✗ Failed to compress video: ${error.message}`);
+    return false;
+  }
+}
 
 // Auto-detect UUID folder in sourcematerials/media/
 const mediaBaseDir = path.join(ROOT_DIR, 'sourcematerials/media');
@@ -21,11 +82,13 @@ if (fs.existsSync(mediaBaseDir)) {
 const DEST_IMAGES_SLIDES = path.join(ROOT_DIR, 'public/assets/images/slides');
 const DEST_IMAGES_ICONS = path.join(ROOT_DIR, 'public/assets/images/icons');
 const DEST_VIDEOS = path.join(ROOT_DIR, 'public/assets/videos');
+const DEST_SCREENSHOTS = path.join(ROOT_DIR, 'public/assets/screenshots');
 const PRESENTATION_JSON = path.join(ROOT_DIR, 'sourcematerials/presentation.json');
 const DATA_OUTPUT = path.join(ROOT_DIR, 'src/data/presentation.json');
+const SCREENSHOTS_DIR = path.join(ROOT_DIR, 'sourcematerials/screenshots');
 
 // Create directories
-[DEST_IMAGES_SLIDES, DEST_IMAGES_ICONS, DEST_VIDEOS].forEach(dir => {
+[DEST_IMAGES_SLIDES, DEST_IMAGES_ICONS, DEST_VIDEOS, DEST_SCREENSHOTS].forEach(dir => {
   fs.mkdirSync(dir, { recursive: true });
 });
 
@@ -35,13 +98,43 @@ if (SOURCE_DIR && fs.existsSync(SOURCE_DIR)) {
   let imageCount = 0;
   let videoCount = 0;
   let iconCount = 0;
+  let compressedCount = 0;
+  const ffmpegAvailable = hasFFmpeg();
+
+  if (!ffmpegAvailable) {
+    console.log('⚠️  ffmpeg not found - large videos will not be compressed');
+    console.log('   Install ffmpeg to enable automatic video compression for Cloudflare Pages');
+  }
 
   files.forEach(file => {
     const src = path.join(SOURCE_DIR, file);
     const ext = path.extname(file).toLowerCase();
 
     if (ext === '.mp4') {
-      fs.copyFileSync(src, path.join(DEST_VIDEOS, file));
+      const dest = path.join(DEST_VIDEOS, file);
+      const fileSize = fs.statSync(src).size;
+
+      // Check if video needs compression
+      if (ffmpegAvailable && fileSize > MAX_VIDEO_SIZE_BYTES) {
+        const fileSizeMB = fileSize / (1024 * 1024);
+        console.log(`  Video ${file} is ${fileSizeMB.toFixed(1)}MB (exceeds ${MAX_VIDEO_SIZE_MB}MB limit)`);
+
+        // Compress video
+        const tempDest = dest + '.tmp.mp4';
+        const compressed = compressVideo(src, tempDest, MAX_VIDEO_SIZE_MB - 1);
+
+        if (compressed) {
+          fs.renameSync(tempDest, dest);
+          compressedCount++;
+        } else {
+          // Fallback: copy original if compression fails
+          console.log(`    ⚠️  Using original file (compression failed)`);
+          fs.copyFileSync(src, dest);
+        }
+      } else {
+        // Copy video as-is if small enough or ffmpeg unavailable
+        fs.copyFileSync(src, dest);
+      }
       videoCount++;
     } else if (file.startsWith('sa_')) {
       fs.copyFileSync(src, path.join(DEST_IMAGES_ICONS, file));
@@ -55,9 +148,27 @@ if (SOURCE_DIR && fs.existsSync(SOURCE_DIR)) {
   console.log(`Media processing complete!`);
   console.log(`  - Slide images: ${imageCount}`);
   console.log(`  - Icons: ${iconCount}`);
-  console.log(`  - Videos: ${videoCount}`);
+  console.log(`  - Videos: ${videoCount}${compressedCount > 0 ? ` (${compressedCount} compressed)` : ''}`);
 } else {
   console.log('Source media directory not found, skipping media copy...');
+}
+
+// Copy screenshots if available
+if (fs.existsSync(SCREENSHOTS_DIR)) {
+  const screenshots = fs.readdirSync(SCREENSHOTS_DIR).filter(f =>
+    ['.png', '.jpg', '.jpeg'].includes(path.extname(f).toLowerCase())
+  );
+  let screenshotCount = 0;
+  screenshots.forEach(file => {
+    fs.copyFileSync(
+      path.join(SCREENSHOTS_DIR, file),
+      path.join(DEST_SCREENSHOTS, file)
+    );
+    screenshotCount++;
+  });
+  console.log(`  - Screenshots: ${screenshotCount}`);
+} else {
+  console.log('  - Screenshots: none (run generate-screenshots.py to create them)');
 }
 
 // Copy and transform presentation JSON
@@ -67,6 +178,35 @@ if (fs.existsSync(PRESENTATION_JSON)) {
 
   // Read and transform the JSON
   const presentationData = JSON.parse(fs.readFileSync(PRESENTATION_JSON, 'utf-8'));
+
+  // Load existing output to preserve AI-generated fields (description, quote_text, quote_attribution)
+  let existingData = null;
+  const existingImageData = new Map(); // Map src path -> AI fields
+  if (fs.existsSync(DATA_OUTPUT)) {
+    try {
+      existingData = JSON.parse(fs.readFileSync(DATA_OUTPUT, 'utf-8'));
+      // Build a map of existing AI-generated image data by src path
+      existingData.sections?.forEach(section => {
+        section.slides?.forEach(slide => {
+          slide.content?.forEach(item => {
+            if (item.type === 'image' && (item.description || item.quote_text || item.category)) {
+              existingImageData.set(item.src, {
+                description: item.description,
+                category: item.category,
+                quote_text: item.quote_text,
+                quote_attribution: item.quote_attribution
+              });
+            }
+          });
+        });
+      });
+      if (existingImageData.size > 0) {
+        console.log(`Found ${existingImageData.size} images with AI-generated descriptions to preserve.`);
+      }
+    } catch (e) {
+      console.log('Could not read existing data, starting fresh.');
+    }
+  }
 
   // Transform media paths to use public assets
   function transformPath(srcPath) {
@@ -88,7 +228,9 @@ if (fs.existsSync(PRESENTATION_JSON)) {
 
     return content.map(item => {
       if (item.type === 'image') {
-        return { ...item, src: transformPath(item.src) };
+        const newSrc = transformPath(item.src);
+        const aiData = existingImageData.get(newSrc) || {};
+        return { ...item, src: newSrc, ...aiData };
       } else if (item.type === 'video') {
         return { ...item, src: transformPath(item.src) };
       } else if (item.type === 'smart_art') {
@@ -118,8 +260,9 @@ if (fs.existsSync(PRESENTATION_JSON)) {
       slides: section.slides.map(slide => ({
         ...slide,
         // Clean up special characters in titles
-        title: slide.title ? slide.title.replace(/\u000b/g, ' ') : slide.title,
-        content: transformContent(slide.content)
+        title: slide.title ? slide.title.replace(/\u000b/g, '\n') : slide.title,
+        content: transformContent(slide.content),
+        layout_background: transformPath(slide.layout_background)
       }))
     }))
   };

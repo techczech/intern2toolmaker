@@ -1,5 +1,6 @@
 import { useEffect, useCallback, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { lectureNotes } from '../data/lectureNotes';
 
 interface GlobalKeyboardState {
   isSearchOpen: boolean;
@@ -77,6 +78,15 @@ export function useGlobalKeyboard(): GlobalKeyboardState {
           }
           break;
 
+        // Outline: o (on slides page, toggles outline overlay; elsewhere, navigates to slides)
+        case 'o':
+        case 'O':
+          if (!event.ctrlKey && !event.metaKey) {
+            event.preventDefault();
+            navigate('/slides/1');
+          }
+          break;
+
         // Media: m
         case 'm':
         case 'M':
@@ -86,12 +96,39 @@ export function useGlobalKeyboard(): GlobalKeyboardState {
           }
           break;
 
-        // Resources: r
-        case 'r':
-        case 'R':
+        // Index: i
+        case 'i':
+        case 'I':
           if (!event.ctrlKey && !event.metaKey) {
             event.preventDefault();
             navigate('/resources');
+          }
+          break;
+
+        // Activities: t
+        case 't':
+        case 'T':
+          if (!event.ctrlKey && !event.metaKey) {
+            event.preventDefault();
+            navigate('/activities');
+          }
+          break;
+
+        // About: a
+        case 'a':
+        case 'A':
+          if (!event.ctrlKey && !event.metaKey) {
+            event.preventDefault();
+            navigate('/about');
+          }
+          break;
+
+        // Lecture Notes: n
+        case 'n':
+        case 'N':
+          if (!event.ctrlKey && !event.metaKey && lectureNotes.length > 0) {
+            event.preventDefault();
+            navigate('/lecture-notes');
           }
           break;
       }

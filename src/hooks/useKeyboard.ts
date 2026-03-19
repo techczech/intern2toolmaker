@@ -1,12 +1,14 @@
 import { useEffect } from 'react';
 import { useNavigation } from './useNavigation';
+import { useSlideViewMode } from './useSlideViewMode';
 
 /**
  * Slide-specific keyboard navigation (arrows, space, home/end).
  * Global shortcuts (/, h, m, s, r, ?) are handled by useGlobalKeyboard.
  */
 export function useKeyboard() {
-  const { nextSlide, prevSlide, nextSection, prevSection, goToFirst, goToLast } = useNavigation();
+  const { nextSlide, prevSlide, nextSection, prevSection, goToFirst, goToLast, goToSlide, totalSlides } = useNavigation();
+  const { mainView, setMainView, toggleDisplayMode } = useSlideViewMode();
 
   useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
@@ -47,10 +49,50 @@ export function useKeyboard() {
           event.preventDefault();
           goToLast();
           break;
+        // Content view: c
+        case 'c':
+          event.preventDefault();
+          setMainView('content');
+          break;
+        // Outline view: o
+        case 'o':
+          event.preventDefault();
+          setMainView('outline');
+          break;
+        // Grid view: d
+        case 'd':
+          if (!event.metaKey && !event.ctrlKey) {
+            event.preventDefault();
+            setMainView('grid');
+          }
+          break;
+        // Toggle display mode (rendered/screenshot): v
+        case 'v':
+          event.preventDefault();
+          toggleDisplayMode();
+          break;
+        // Go to slide: g
+        case 'g':
+          event.preventDefault();
+          const input = prompt(`Go to slide (1-${totalSlides}):`);
+          if (input) {
+            const num = parseInt(input, 10);
+            if (!isNaN(num) && num >= 1 && num <= totalSlides) {
+              goToSlide(num - 1);
+            }
+          }
+          break;
+        // Escape returns to content view
+        case 'Escape':
+          if (mainView !== 'content') {
+            event.preventDefault();
+            setMainView('content');
+          }
+          break;
       }
     }
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [nextSlide, prevSlide, nextSection, prevSection, goToFirst, goToLast]);
+  }, [nextSlide, prevSlide, nextSection, prevSection, goToFirst, goToLast, setMainView, toggleDisplayMode, goToSlide, totalSlides, mainView]);
 }

@@ -1,67 +1,68 @@
 // Session information configuration
-// Fill in details relevant to your presentation
-// Optional fields can be left empty ("") or arrays empty ([])
-
-interface FeaturedLink {
-  name: string;
-  url: string;
-  description?: string;
-}
+import type { FeaturedLink } from './sessionInfo.types';
 
 export const sessionInfo = {
-  // Main presentation title
-  title: "From intern to toolmaker",
-  // Subtitle or tagline
-  subtitle: "Five roles AI can play to support research and learning",
+  title: "From Intern to Toolmaker",
+  subtitle: "Five Roles AI Can Play in Your Studies",
 
-  // Link to the talk/presentation page (optional)
   talkPageUrl: "",
-  talkPageLabel: "Talk Page", // e.g., "Talk Page", "Webinar Recording", "Session Info"
+  talkPageLabel: "",
 
   speaker: {
     name: "Dominik Lukeš",
     affiliation: "Oxford e-Research Centre, University of Oxford",
     email: "Dominik.Lukes@oerc.ox.ac.uk",
     links: {
-      website: "https://oerc.ox.ac.uk/ai-centre/about/staff/dominik-lukes",
+      website: "https://dominiklukes.net",
     },
-    bio: `Research facilitator and trainer at the Oxford e-Research Centre, helping researchers leverage AI and computational methods for research and learning.`,
+    bio: `AI Consultant for Research and Strategy at the Oxford e-Research Centre. Helps researchers and students leverage AI and computational methods for research and learning. Runs workshops on practical AI applications across disciplines.`,
   },
 
-  // Event/conference details (optional - leave empty if standalone presentation)
   event: {
-    name: "", // e.g., "AULC 2026" - leave empty if no conference
-    date: "January 2026", // e.g., "Friday, 9 January 2026"
-    time: "", // e.g., "14:00 - 15:15"
-    location: "", // e.g., "Room 301"
-    type: "Talk", // e.g., "Workshop", "Talk", "Seminar", "Webinar"
-    sessionLink: "", // Link to conference program page (optional)
+    name: "",
+    date: "",
+    time: "",
+    location: "",
+    type: "Workshop",
+    sessionLink: "",
   },
 
-  // Multi-paragraph abstract (use \n\n for paragraph breaks)
-  abstract: `Exploring five key roles that AI can play in supporting research and learning: from basic task automation to sophisticated tool creation. This session examines practical applications and considerations for researchers looking to integrate AI into their workflows.`,
+  abstract: `This workshop covers the key topics in what roles AI can play in the process of learning, researching, and studying a subject. These roles will not only give you ideas about what tools like ChatGPT, NotebookLM, or Google Gemini can do for you but also how to approach using them with the right level of confidence and caution.\n\nThe five roles are: Intern (routine tasks and literature searches), Translator (between languages, formats, and modalities), Peer Reviewer (feedback on ideas and work), Tutor (step-by-step concept guidance), and Toolmaker (creating useful tools for research and study).\n\nThe workshop also covers the key principles of how all generative AI tools work: a combination of models and orchestrations which combine the intelligence of Large Language Models with traditional tools like search or code.`,
 
-  // Key topics covered in the presentation (optional)
-  // These will be displayed as highlights on the home page
-  keyTopics: [] as string[],
-  // Example:
-  // keyTopics: [
-  //   "Topic 1: Brief description",
-  //   "Topic 2: Brief description",
-  // ],
+  keyTopics: [
+    "AI as Intern — Help with routine tasks: from literature searches to organising your study schedule",
+    "AI as Translator — Translate between languages, formats, styles and even modalities like text to audio",
+    "AI as Peer Reviewer — Give you feedback on your ideas and work",
+    "AI as Tutor — Walk you through concepts and processes step by step",
+    "AI as Toolmaker — Create useful tools for yourself and others to use in your research and study",
+    "Understanding the jagged frontier of AI capabilities — what AI can and cannot do",
+    "Models vs Orchestration — how generative AI tools actually work",
+    "Practical verification strategies — how to check and validate AI outputs",
+  ],
 
-  // Featured links section (optional)
-  // Use for related resources, example apps, tools, etc.
   featuredLinks: {
-    title: "", // e.g., "Related Resources", "Example Apps", "Tools Mentioned"
-    items: [] as FeaturedLink[],
-    // Example:
-    // items: [
-    //   {
-    //     name: "Resource Name",
-    //     url: "https://example.com",
-    //     description: "Brief description",
-    //   },
-    // ],
+    title: "Tools & Resources",
+    items: [
+      {
+        name: "Google AI Studio",
+        url: "https://ai.dev",
+        description: "Free platform for exploring frontier AI models and building simple tools",
+      },
+      {
+        name: "NotebookLM",
+        url: "https://notebooklm.google.com",
+        description: "AI-powered research and note-taking tool with podcast generation",
+      },
+      {
+        name: "EduTools",
+        url: "https://edutools.fyi",
+        description: "Collection of educational tools and workshop handouts",
+      },
+      {
+        name: "Deliberate Practice Guide",
+        url: "https://deliberatepractice.dominiklukes.net",
+        description: "Guide to building skills through reflective practice",
+      },
+    ] as FeaturedLink[],
   },
 };

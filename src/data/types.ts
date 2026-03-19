@@ -24,6 +24,7 @@ export interface Slide {
   layout: string;
   notes: string;
   content: ContentBlock[];
+  layout_background?: string;
 }
 
 export type ContentBlock =
@@ -31,24 +32,42 @@ export type ContentBlock =
   | ListContent
   | ImageContent
   | SmartArtContent
-  | VideoContent;
+  | VideoContent
+  | ShapeContent;
+
+export interface ContentPosition {
+  left: number;
+  top: number;
+  width: number;
+  height: number;
+}
 
 export interface HeadingContent {
   type: 'heading';
   text: string;
   level: number;
+  runs?: TextRun[];
+  position?: ContentPosition;
 }
 
 export interface ListContent {
   type: 'list';
   style: 'bullet' | 'numbered';
   items: ListItem[];
+  position?: ContentPosition;
+}
+
+export interface TextRun {
+  text: string;
+  bold?: boolean;
+  italic?: boolean;
 }
 
 export interface ListItem {
   text: string;
   level: number;
   children: ListItem[];
+  runs?: TextRun[];
 }
 
 export interface ImageContent {
@@ -56,15 +75,18 @@ export interface ImageContent {
   src: string;
   alt: string;
   caption: string;
-  description?: string; // AI-generated description of image content
-  quote_text?: string; // Extracted quote from image (tweets, messages, etc.)
-  quote_attribution?: string; // Who said the quote
+  description?: string;
+  category?: string;
+  quote_text?: string;
+  quote_attribution?: string;
+  position?: ContentPosition;
 }
 
 export interface SmartArtContent {
   type: 'smart_art';
   layout: string;
   nodes: SmartArtNode[];
+  position?: ContentPosition;
 }
 
 export interface SmartArtNode {
@@ -80,6 +102,22 @@ export interface VideoContent {
   type: 'video';
   src: string;
   title: string;
+  position?: ContentPosition;
+}
+
+export interface ShapeContent {
+  type: 'shape';
+  shape_type: string;
+  shape_name: string;
+  position: {
+    left: number;
+    top: number;
+    width: number;
+    height: number;
+  };
+  fill_color?: string;
+  line_color?: string;
+  text?: string;
 }
 
 // Flattened slide with section info for navigation
@@ -135,6 +173,8 @@ export interface QuoteResource {
   attribution?: string;
   slideIndex: number;
   slideTitle: string;
+  extractedFromImage?: boolean;
+  topic?: string;
 }
 
 export interface ImageResource {
@@ -150,6 +190,7 @@ export interface ImageResource {
 export interface ToolResource {
   name: string;
   description?: string;
+  url?: string;
 }
 
 export interface TermResource {
@@ -160,7 +201,9 @@ export interface TermResource {
 export interface LinkResource {
   url: string;
   label: string;
+  description?: string;
   slideIndex?: number;
+  linkType?: string;
 }
 
 export interface ExtractedResources {
